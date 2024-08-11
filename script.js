@@ -1,45 +1,44 @@
 // 1. CONFIGURATION: Add or remove variables here.
 // 1. CONFIGURATION: Add or remove variables here.
 const config = {
-    encounterTypes: ['Combat', 'Social', 'Exploration', 'Environmental Hazard', 'Quest Hook'],
-    npcRaces: {
-        'Human': ["Aldric", "Brunhild", "Cedric", "Diana", "Edgar", "Fiona", "Gwen", "Hugh", "Ivy", "Jasper",
-        "Kendra", "Lena", "Mordecai", "Nora", "Oswin", "Pippa", "Quentin", "Renaud", "Selma", "Tobias",
-        "Ursula", "Vera", "Winston", "Xena", "Yvonne", "Zachary", "Aveline", "Bernard", "Clara", "Derek",
-        "Elena", "Frederick", "Greta", "Hilda", "Ivor", "Jocelyn", "Kurt", "Lydia", "Mabel", "Norman"],
-        
-        'Elf': ["Elowen", "Thalion", "Aeloria", "Faelan", "Lirael", "Rhiannon", "Eldrin", "Seraphina", "Aelar", "Lyra",
-        "Arannis", "Galen", "Elandra", "Tauron", "Vanya", "Lorian", "Eldara", "Fingon", "Mirelle", "Orin",
-        "Nimriel", "Selendir", "Isolde", "Riven", "Cyrian", "Aelwen", "Tiriel", "Elion", "Alura", "Varian",
-        "Lysandra", "Darian", "Aerin", "Calen", "Nymeria", "Sylas", "Elara", "Theron", "Maeve", "Valen"],
-        
-        'Dwarf': ["Thorin", "Dwalin", "Balin", "Fili", "Kili", "Gimli", "Durin", "Oin", "Gloin", "Bofur",
-        "Bombur", "Bifur", "Dori", "Nori", "Ori", "Grimbeorn", "Bruni", "Haldor", "Krag", "Rurik",
-        "Gunnar", "Eirik", "Ragnar", "Brenna", "Sigrid", "Astrid", "Dagmar", "Leif", "Bjarni", "Hilda",
-        "Jorund", "Kara", "Olaf", "Yrsa", "Svein", "Freya", "Thrain", "Yngvar"],
-        
-        'Orc': ["Grom", "Uruk", "Krag", "Borg", "Gruk", "Thok", "Ragnor", "Zog", "Morg", "Gor",
-        "Drok", "Karg", "Krug", "Skar", "Ruk", "Groth", "Vark", "Borgar", "Thrak", "Lurg",
-        "Hruk", "Gorak", "Mog", "Rok", "Grim", "Gorg", "Kragor", "Narg", "Korth", "Skorg",
-        "Bruk", "Horg", "Varg", "Drak", "Zurg", "Murk", "Garn", "Rokar", "Thorn", "Gorak"],
-        
-        'Tiefling': ["Azura", "Zephyros", "Riven", "Nyx", "Lilith", "Darius", "Sable", "Eris", "Kael", "Morgana",
-        "Jareth", "Isara", "Thorne", "Vesper", "Lucian", "Seraphine", "Kieran", "Nyssa", "Draven", "Ariella",
-        "Zara", "Jax", "Evelyn", "Lysander", "Selene", "Ronan", "Cyra", "Valen", "Rowan", "Dante",
-        "Orin", "Sienna", "Zane", "Lyra", "Korath", "Evelin", "Kaelith", "Rael", "Nyra", "Talon"],
-        
-        'Goblin': [ "Grizzle", "Snik", "Ruk", "Zog", "Glim", "Krag", "Murk", "Borg", "Snag", "Grub",
-            "Trix", "Rok", "Fizzle", "Drek", "Skar", "Vog", "Zib", "Blitz", "Grok", "Skrit",
-            "Nix", "Bark", "Grit", "Vrek", "Fuzz", "Jinx", "Rag", "Skulk", "Drib", "Mog",
-            "Krogg", "Zek", "Grub", "Krub", "Froth", "Wik", "Miz", "Gurk", "Trog", "Sniks", "Griefer"],
-        
-        'Dragonborn': ["Tharax", "Zephyros", "Rathgar", "Kalista", "Draknar", "Syrin", "Vorath", "Zara", "Korrik", "Talon",
-        "Myrak", "Lyria", "Aric", "Vesper", "Gorath", "Seraphis", "Rylor", "Aurelia", "Korak", "Elara",
-        "Balthar", "Nerath", "Jorik", "Rynna", "Draxil", "Kara", "Valthor", "Nyssa", "Thorin", "Zorath",
-        "Kyran", "Eldra", "Draven", "Raida", "Vyris", "Sorin", "Thalric", "Ilyana", "Goran", "Tirza"]
-    },
-    npcClasses: [ "Fighter", "Mage", "Rogue", "Bard", "Cleric", "Ranger",
-        "Barbarian", "Druid", "Monk", "Paladin", "Sorcerer", "Warlock", "Wizard"],
+    encounterTypes: ['Combat', 'Social', 'Exploration', 'Environmental Hazard', 'Quest Hook'],    
+        npcRaces: {
+            'Human': ["Shepard", "Anderson", "Kaidan", "Ashley", "James", "Miranda", "Jacob", "Jack", "Thane", "Liara",
+            "Garrus", "Tali", "Kasumi", "Zaeed", "Mordin", "Javik", "EDI", "Vega", "Hackett", "Udina", 
+            "Alenko", "Chakwas", "Vasir", "Bailey", "Brooks", "Cortez", "Vega", "Samantha", "Alec", "Sara",
+            "Scott", "Ryder", "Gillian", "Oriana", "Donnel", "Shiala", "Kahlee", "Jeff", "Riley", "Hannah"],
+            
+            'Asari': ["Liara", "Samara", "Aria", "Benezia", "Tevos", "Lisana", "Falere", "Rila", "Lisana", "Nassana",
+            "Matriarch", "Aethyta", "Pelessaria", "Nyxeris", "Sha'ira", "Lana", "Shiala", "Aleena", "Liselle", "Aethyta",
+            "Lylia", "Ciana", "Aynaya", "Thessia", "Irit", "Arina", "Kyriana", "Siala", "Pala", "Kallista",
+            "Tiala", "Narina", "Celeste", "Irissa", "Anala", "Nyreen", "Nessana", "Shala", "Selana", "T'Soni"],
+            
+            'Turian': ["Garrus", "Saren", "Nihlus", "Vakarian", "Victus", "Tiran", "Adrien", "Tiran", "Sidonis", "Avitus",
+            "Nyreen", "Cicerus", "Tonn", "Gaius", "Septimus", "C-Sec", "Arlen", "Pallin", "Venari", "Saren",
+            "Scipio", "Lantar", "Tidus", "Quintus", "Fidus", "Sidonis", "Linron", "Torian", "Valin", "Lorik",
+            "Merena", "Decius", "Tauren", "Nedra", "Gaius", "Nyreen", "Kalira", "Orinia", "Prax", "Jemus"],
+            
+            'Krogan': ["Wrex", "Grunt", "Drack", "Nakmor", "Okeer", "Kesh", "Urdnot", "Wreav", "Jarrod", "Raeka",
+            "Jorgal", "Nakmor", "Gatatog", "Javik", "Krogan", "Kesh", "Wreav", "Tuchanka", "Ravanor", "Ganr",
+            "Drau", "Mordin", "Tagg", "Shiagur", "Krunt", "Gatatog", "Kruge", "Tirn", "Ravik", "Baruk",
+            "Gant", "Shaman", "Kragg", "Kryik", "Morlan", "Krogan", "Runt", "Kruger", "Togan", "Tarn"],
+            
+            'Salarian': ["Mordin", "Kirahe", "Linron", "Paddok", "Jondum", "Esheel", "Maelon", "Chun", "Donel", "Nemin",
+            "Daro", "Elenko", "Jaroth", "Thane", "Miranda", "Rana", "Gorik", "Zorah", "Kellis", "Lek",
+            "Amonkira", "Myxin", "Kellam", "Mora", "Jondum", "Pallin", "Krogan", "Kirrahe", "Akra", "Parn",
+            "Valern", "Seren", "Meken", "Sevron", "Tash", "Korris", "Esheel", "Malik", "Vey", "Joric"],
+            
+            'Quarian': ["Tali", "Raan", "Xen", "Daro", "Veetor", "Shala", "Reegar", "Kal", "Keelah", "Zorah",
+            "Vas", "Nedas", "Kor", "Nar", "Zorah", "Nar", "Moreh", "Korr", "Kor", "Linna",
+            "Nera", "Raan", "Zorah", "Vas", "Shepard", "Reegar", "Kal", "Nedas", "Shala", "Meyl",
+            "Ran", "Tonn", "Jaal", "Rael", "Meyl", "Xen", "Nedas", "Tonn", "Tali", "Nar"],
+            
+            'Geth': ["Legion", "N7", "Saren", "Prime", "Tali", "Hackett", "Turing", "Mack", "Raan", "Collector",
+            "Geth", "Armature", "Kalros", "Sovereign", "Keelah", "Zorah", "Nedas", "Reaper", "Shala", "Geth",
+            "Tonn", "Hopper", "Kal", "Turing", "Overlord", "Turian", "Nar", "Shepard", "Mack", "Armiger",
+            "Reaper", "Overlord", "Legion", "Prime", "Zorah", "Tali", "Hackett", "Raan", "Shala", "Collector"]
+        },
+    npcClasses: [ "Soldier", "Engineer", "Adept", "Infiltrator", "Sentinel", "Vanguard"],
     npcDispositions: ['Hostile', 'Neutral', 'Friendly'],
     npcMotivations: {
         'Greed': ['Gold', 'Jewels', 'Ancient Artifacts', 'Power'],
